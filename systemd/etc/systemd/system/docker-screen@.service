@@ -1,0 +1,19 @@
+[Unit]
+Description=Fluorescent Screen container instance %I
+Requires=docker.service
+After=docker.service
+
+[Service]
+Restart=always
+RestartSec=2
+EnvironmentFile=/etc/sysconfig/docker-screen-epics-ioc
+EnvironmentFile=/etc/sysconfig/docker-screen-epics-ioc-mapping
+Environment=IMAGE_VERSION=debian-9.2
+# Used inside runScreen script
+Environment=SCREEN_INSTANCE=%i
+ExecStartPre=-/usr/bin/docker pull lnlsdig/screen-epics-ioc:${IMAGE_VERSION}
+ExecStart=/usr/local/bin/runScreen.sh
+ExecStop=/usr/local/bin/stopScreen.sh
+
+[Install]
+WantedBy=multi-user.target
