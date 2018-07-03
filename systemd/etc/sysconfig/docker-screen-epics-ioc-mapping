@@ -1,9 +1,14 @@
+# Screen prefix 1
+# Screen prefix 2
+# Motor controller PVs prefix
+# Camera PVs prefix
+
 # --- SCREEN 1 ---
 
-SCREEN_1_PV_AREA_PREFIX=TEST:                       # Screen prefix 1
-SCREEN_1_PV_DEVICE_PREFIX=DI-SCREEN-1:              # Screen prefix 2
-SCREEN_1_MTR_CTRL_PREFIX=TEST-Glob:DI-DMC3017-1:    # Motor controller PVs prefix
-SCREEN_1_CAM_PREFIX=TEST-Glob:DI-Basler-1:          # Camera PVs prefix
+SCREEN_1_PV_AREA_PREFIX=TEST:
+SCREEN_1_PV_DEVICE_PREFIX=DI-SCREEN-1:
+SCREEN_1_MTR_CTRL_PREFIX=TEST-Glob:DI-DMC3017-1:
+SCREEN_1_CAM_PREFIX=TEST-Glob:DI-Basler-1:
 
 # --- SCREEN 2 ---
 
