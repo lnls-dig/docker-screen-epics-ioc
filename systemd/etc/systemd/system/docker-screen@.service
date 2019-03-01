@@ -8,7 +8,7 @@ Restart=always
 RestartSec=2
 EnvironmentFile=/etc/sysconfig/docker-screen-epics-ioc
 EnvironmentFile=/etc/sysconfig/docker-screen-epics-ioc-mapping
-Environment=IMAGE_VERSION=1.1.1-base-3.15-debian-9
+Environment=IMAGE_VERSION=1.2.0-base-3.15-debian-9
 # Used inside runScreen script
 Environment=SCREEN_INSTANCE=%i
 ExecStartPre=-/usr/bin/docker pull lnlsdig/screen-epics-ioc:${IMAGE_VERSION}
