@@ -2,7 +2,7 @@ FROM lnls/epics-dist:base-3.15-synapps-lnls-R1-0-0-debian-9.5
 
 ENV IOC_REPO screen-epics-ioc
 ENV BOOT_DIR iocScreen
-ENV COMMIT v1.2.0
+ENV COMMIT v1.3.0
 
 RUN git clone https://github.com/lnls-dig/${IOC_REPO}.git /opt/epics/${IOC_REPO} && \
     cd /opt/epics/${IOC_REPO} && \
